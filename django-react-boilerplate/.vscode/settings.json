@@ -1,0 +1,4 @@
+{
+    "python.formatting.provider": "yapf",
+    "python.pythonPath": "/Users/michael/opt/anaconda3/envs/django_react_test_env/bin/python"
+}
