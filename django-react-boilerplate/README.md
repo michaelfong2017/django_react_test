@@ -1,68 +1,40 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Testing and Development
+1. Navigate to the django-react-boilerplate directory.
+```console
+$ cd django-react-boilerplate
+```
+2. You may need to run the following lines once.
+```console
+$ python manage.py makemigrations
+$ python manage.py migrate --run-syncdb
+```
+or
+```console
+$ python manage.py makemigrations
+$ python manage.py migrate
+```
 
-## Available Scripts
+Whenever you start the server, run the following line to start the development server at 127.0.0.1:8000.
+```console
+$ python manage.py runserver
+```
+When you only change python codes, you do not need to restart the server every time since django offers hot-reload.
 
-In the project directory, you can run:
+3. Whenever you change your frontend codes such as index.js and index.css, run the following line.
+```console
+$ yarn build
+```
+4. If you are only developing frontend codes. You can use hot-reload. It is suggested to run the following line to start another development server at localhost:3000.
+Remember that this server only contains frontend codes.
 
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Environment
+Conda environment is used and the dependencies are shown in [requirements.txt](https://github.com/michaelfong2017/django_react_test/blob/master/django-react-boilerplate/requirements.txt).
+1. Create conda environment, in my case, my environment name is django_react_test_env.
+```console
+$ conda create -n django_react_test_env python=3.7
+$ conda activate django_react_test_env
+```
+2. Install dependencies.
+```console
+$ pip install -r requirements.txt
+```
