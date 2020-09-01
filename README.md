@@ -1,5 +1,32 @@
 # django_react_test
-## Testing and Development
+## Usage
+### 1. Navigate to the django-react-boilerplate directory
+```console
+$ cd django-react-boilerplate
+```
+
+### 2. Set up environment
+Conda environment is used and the dependencies are shown in [requirements.txt](https://github.com/michaelfong2017/django_react_test/blob/master/django-react-boilerplate/requirements.txt).
+1. Create conda environment, in my case, my environment name is django_react_test_env.
+```console
+$ conda create -n django_react_test_env python=3.7
+$ conda activate django_react_test_env
+```
+2. Install dependencies.
+```console
+$ pip install -r requirements.txt
+```
+
+### 3. Run server
+```console
+$ python manage.py runserver
+```
+
+### 4. Test
+1. Enter your username at http://127.0.0.1:8000/.
+2. See your username at http://127.0.0.1:8000/api/data/.
+
+## Notes for Testing and Development
 1. Navigate to the django-react-boilerplate directory.
 ```console
 $ cd django-react-boilerplate
@@ -27,15 +54,3 @@ $ yarn build
 ```
 4. If you are only developing frontend codes. You can use hot-reload. It is suggested to run the following line to start another development server at localhost:3000.
 Remember that this server only contains frontend codes.
-
-## Environment
-Conda environment is used and the dependencies are shown in [requirements.txt](https://github.com/michaelfong2017/django_react_test/blob/master/django-react-boilerplate/requirements.txt).
-1. Create conda environment, in my case, my environment name is django_react_test_env.
-```console
-$ conda create -n django_react_test_env python=3.7
-$ conda activate django_react_test_env
-```
-2. Install dependencies.
-```console
-$ pip install -r requirements.txt
-```
